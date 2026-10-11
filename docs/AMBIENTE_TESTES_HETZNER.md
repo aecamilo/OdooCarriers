@@ -62,7 +62,8 @@ No servidor (utilizador `alexander`):
 | Password | Gestor de secrets / `.env` no servidor (não versionar) |
 | Recriação DDL | [sql/setup_odoocarriers_saas.sql](./sql/setup_odoocarriers_saas.sql) |
 
-O gateway no servidor liga a `127.0.0.1:3306`. Na máquina de dev, use o [túnel SSH](./scripts/mysql-tunnel-dev.sh) (`DB_PORT=3307`).
+O gateway no servidor liga a `127.0.0.1:3306`. Na máquina de dev, use o [túnel SSH](./scripts/mysql-tunnel-dev.sh) (`DB_PORT=3307`) — **apenas** para gateway local ou cliente SQL na máquina de dev.
+
 ### Aplicar schema / migrations (sem túnel local)
 
 Na máquina de desenvolvimento:
