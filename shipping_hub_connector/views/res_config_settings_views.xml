@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_shipping_hub" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.shipping.hub</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='stock']" position="inside">
+                <block title="Shipping Hub Connector" name="shipping_hub_connector_settings">
+                    <setting string="SaaS credentials"
+                             help="API token and environment for the Shipping Hub gateway.">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="shipping_hub_api_token" class="col-lg-3 o_light_label"/>
+                                <field name="shipping_hub_api_token" password="True" class="col-lg-6"/>
+                            </div>
+                            <div class="row">
+                                <label for="shipping_hub_environment" class="col-lg-3 o_light_label"/>
+                                <field name="shipping_hub_environment" widget="radio" class="col-lg-6"/>
+                            </div>
+                            <div class="row">
+                                <label for="shipping_hub_gateway_base_url" class="col-lg-3 o_light_label"/>
+                                <field name="shipping_hub_gateway_base_url" class="col-lg-6"
+                                       placeholder="Optional URL override"/>
+                            </div>
+                            <div class="row">
+                                <label for="shipping_hub_iap_service_name" class="col-lg-3 o_light_label"/>
+                                <field name="shipping_hub_iap_service_name" class="col-lg-6"/>
+                            </div>
+                            <div class="row">
+                                <field name="shipping_hub_skip_iap_charge"/>
+                            </div>
+                            <div class="row mt8">
+                                <button name="action_test_shipping_hub_connection"
+                                        type="object"
+                                        string="Test connection"
+                                        class="btn-primary"
+                                        icon="fa-plug"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Activation">
+                        <button name="action_open_shipping_hub_provision" type="object"
+                                string="Provision API token (IAP)" class="btn-secondary"/>
+                    </setting>
+                    <setting string="Automation rules"
+                             help="When to generate labels and attach PDFs to the picking chatter.">
+                        <div class="content-group">
+                            <field name="shipping_hub_auto_generate"/>
+                            <field name="shipping_hub_auto_attach"/>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

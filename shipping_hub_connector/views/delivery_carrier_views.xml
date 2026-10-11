@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_delivery_carrier_form_shipping_hub" model="ir.ui.view">
+        <field name="name">delivery.carrier.form.shipping.hub</field>
+        <field name="model">delivery.carrier</field>
+        <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='delivery_type']" position="after">
+                <field name="shipping_hub_carrier_code"
+                       invisible="delivery_type != 'shipping_hub'"
+                       required="delivery_type == 'shipping_hub'"
+                       options="{'no_create': True, 'no_open': True}"/>
+                <field name="shipping_hub_service_level"
+                       invisible="delivery_type != 'shipping_hub'"
+                       placeholder="standard"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

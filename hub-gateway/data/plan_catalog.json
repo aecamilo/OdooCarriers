@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.1",
+  "currency": "EUR",
+  "plans": {
+    "free": {
+      "display_name": "Free",
+      "target_audience": "Tests and integration validation",
+      "monthly_price_eur": 0,
+      "labels_per_month": 50,
+      "labels_unlimited": false,
+      "overage_mode": "block",
+      "overage_price_eur": null,
+      "rpm": 10,
+      "burst": 2,
+      "support": ["documentation", "email"]
+    },
+    "starter": {
+      "display_name": "Starter",
+      "target_audience": "SMEs with initial volume",
+      "monthly_price_eur": 29,
+      "labels_per_month": 1000,
+      "labels_unlimited": false,
+      "overage_mode": "bill",
+      "overage_price_eur": 0.05,
+      "rpm": 60,
+      "burst": 10,
+      "support": ["documentation", "email"]
+    },
+    "pro": {
+      "display_name": "Pro",
+      "target_audience": "SMEs with daily operations",
+      "monthly_price_eur": 99,
+      "labels_per_month": 10000,
+      "labels_unlimited": false,
+      "overage_mode": "bill",
+      "overage_price_eur": 0.03,
+      "rpm": 300,
+      "burst": 30,
+      "support": ["documentation", "email"]
+    },
+    "enterprise": {
+      "display_name": "Enterprise",
+      "target_audience": "Large companies and distributors",
+      "monthly_price_eur": 299,
+      "labels_per_month": null,
+      "labels_unlimited": true,
+      "overage_mode": "none",
+      "overage_price_eur": 0,
+      "rpm": 1200,
+      "burst": 100,
+      "support": ["documentation", "email"]
+    }
+  }
+}

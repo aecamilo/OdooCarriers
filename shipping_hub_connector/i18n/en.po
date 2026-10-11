@@ -1,0 +1,333 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shipping_hub_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-26 20:00+0000\n"
+"PO-Revision-Date: 2026-09-26 20:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: shipping_hub_connector
+msgid "Generate Hub Label"
+msgstr "Generate Hub Label"
+
+#. module: shipping_hub_connector
+msgid "Cancel Label"
+msgstr "Cancel Label"
+
+#. module: shipping_hub_connector
+msgid "Do you want to cancel this label with the carrier?"
+msgstr "Do you want to cancel this label with the carrier?"
+
+#. module: shipping_hub_connector
+msgid "Generate Hub Labels (batch)"
+msgstr "Generate Hub Labels (batch)"
+
+#. module: shipping_hub_connector
+msgid "Freight information"
+msgstr "Freight information"
+
+#. module: shipping_hub_connector
+msgid "Open carrier tracking"
+msgstr "Open carrier tracking"
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub Connector"
+msgstr "Shipping Hub Connector"
+
+#. module: shipping_hub_connector
+msgid "SaaS credentials"
+msgstr "SaaS credentials"
+
+#. module: shipping_hub_connector
+msgid "API token and environment for the Shipping Hub gateway."
+msgstr "API token and environment for the Shipping Hub gateway."
+
+#. module: shipping_hub_connector
+msgid "Optional URL override"
+msgstr "Optional URL override"
+
+#. module: shipping_hub_connector
+msgid "Test connection"
+msgstr "Test connection"
+
+#. module: shipping_hub_connector
+msgid "Automation rules"
+msgstr "Automation rules"
+
+#. module: shipping_hub_connector
+msgid "When to generate labels and attach PDFs to the picking chatter."
+msgstr "When to generate labels and attach PDFs to the picking chatter."
+
+#. module: shipping_hub_connector
+msgid "Batch Shipping Hub labels"
+msgstr "Batch Shipping Hub labels"
+
+#. module: shipping_hub_connector
+msgid "Download merged PDF"
+msgstr "Download merged PDF"
+
+#. module: shipping_hub_connector
+msgid "Close"
+msgstr "Close"
+
+#. module: shipping_hub_connector
+msgid "Hub label id"
+msgstr "Hub label id"
+
+#. module: shipping_hub_connector
+msgid "Last Hub error"
+msgstr "Last Hub error"
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub API Token"
+msgstr "Shipping Hub API Token"
+
+#. module: shipping_hub_connector
+msgid "Environment"
+msgstr "Environment"
+
+#. module: shipping_hub_connector
+msgid "Sandbox"
+msgstr "Sandbox"
+
+#. module: shipping_hub_connector
+msgid "Production"
+msgstr "Production"
+
+#. module: shipping_hub_connector
+msgid "Generate label on picking validation"
+msgstr "Generate label on picking validation"
+
+#. module: shipping_hub_connector
+msgid "Attach label PDF to Chatter"
+msgstr "Attach label PDF to Chatter"
+
+#. module: shipping_hub_connector
+msgid "Gateway base URL (override)"
+msgstr "Gateway base URL (override)"
+
+#. module: shipping_hub_connector
+msgid "Hub carrier code"
+msgstr "Hub carrier code"
+
+#. module: shipping_hub_connector
+msgid "Service level"
+msgstr "Service level"
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub Europe"
+msgstr "Shipping Hub Europe"
+
+#. module: shipping_hub_connector
+msgid "Merged labels PDF"
+msgstr "Merged labels PDF"
+
+#. module: shipping_hub_connector
+msgid "Filename"
+msgstr "Filename"
+
+#. module: shipping_hub_connector
+msgid "Errors"
+msgstr "Errors"
+
+#. module: shipping_hub_connector
+msgid "Carrier"
+msgstr "Carrier"
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub"
+msgstr "Shipping Hub"
+
+#. module: shipping_hub_connector
+msgid "Connection successful. Token and gateway are reachable."
+msgstr "Connection successful. Token and gateway are reachable."
+
+#. module: shipping_hub_connector
+msgid "Shipping label generated via Shipping Hub."
+msgstr "Shipping label generated via Shipping Hub."
+
+#. module: shipping_hub_connector
+msgid "This delivery is not eligible for a Shipping Hub label."
+msgstr "This delivery is not eligible for a Shipping Hub label."
+
+#. module: shipping_hub_connector
+msgid "Not eligible for batch label generation."
+msgstr "Not eligible for batch label generation."
+
+#. module: shipping_hub_connector
+msgid "No tracking number available."
+msgstr "No tracking number available."
+
+#. module: shipping_hub_connector
+msgid "No public tracking URL configured for this carrier code."
+msgstr "No public tracking URL configured for this carrier code."
+
+#. module: shipping_hub_connector
+msgid "Unknown error"
+msgstr "Unknown error"
+
+#. module: shipping_hub_connector
+msgid ""
+"Incomplete shipment data (address, postal code, weight, or carrier "
+"settings)."
+msgstr ""
+"Incomplete shipment data (address, postal code, weight, or carrier "
+"settings)."
+
+#. module: shipping_hub_connector
+msgid "Monthly label quota has been reached."
+msgstr "Monthly label quota has been reached."
+
+#. module: shipping_hub_connector
+msgid "Too many requests; please wait about one minute and try again."
+msgstr "Too many requests; please wait about one minute and try again."
+
+#. module: shipping_hub_connector
+msgid "Carrier API credentials are missing in the Shipping Hub portal."
+msgstr "Carrier API credentials are missing in the Shipping Hub portal."
+
+#. module: shipping_hub_connector
+msgid "Your Shipping Hub subscription is not active."
+msgstr "Your Shipping Hub subscription is not active."
+
+#. module: shipping_hub_connector
+msgid "Invalid API token. Update it in Inventory settings."
+msgstr "Invalid API token. Update it in Inventory settings."
+
+#. module: shipping_hub_connector
+msgid "Request signature rejected. Check the API token."
+msgstr "Request signature rejected. Check the API token."
+
+#. module: shipping_hub_connector
+msgid "Request timestamp out of range. Sync server time."
+msgstr "Request timestamp out of range. Sync server time."
+
+#. module: shipping_hub_connector
+msgid "Duplicate request nonce. Try again."
+msgstr "Duplicate request nonce. Try again."
+
+#. module: shipping_hub_connector
+msgid "The carrier rejected the shipment request."
+msgstr "The carrier rejected the shipment request."
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub gateway URL is not configured."
+msgstr "Shipping Hub gateway URL is not configured."
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub API token is missing or too short."
+msgstr "Shipping Hub API token is missing or too short."
+
+#. module: shipping_hub_connector
+msgid "Shipping Hub gateway timed out. Try again later."
+msgstr "Shipping Hub gateway timed out. Try again later."
+
+#. module: shipping_hub_connector
+msgid "Could not reach the Shipping Hub gateway. Check URL and network."
+msgstr "Could not reach the Shipping Hub gateway. Check URL and network."
+
+#. module: shipping_hub_connector
+msgid "Unexpected success on connection test."
+msgstr "Unexpected success on connection test."
+
+#. module: shipping_hub_connector
+msgid "API token rejected by the gateway (401)."
+msgstr "API token rejected by the gateway (401)."
+
+#. module: shipping_hub_connector
+msgid "Python package pypdf is required for batch PDF merge."
+msgstr "Python package pypdf is required for batch PDF merge."
+
+#. module: shipping_hub_connector
+msgid "No merged PDF available. Check the error summary."
+msgstr "No merged PDF available. Check the error summary."
+
+#. module: shipping_hub_connector
+msgid "Hub carrier code is required for Shipping Hub delivery methods."
+msgstr "Hub carrier code is required for Shipping Hub delivery methods."
+
+#. module: shipping_hub_connector
+msgid ""
+"Label issue failed (%(carrier)s)\n"
+"Could not generate a label for order %(ref)s.\n"
+"Reason from the Hub:\n"
+"%(reason)s\n"
+msgstr ""
+"Label issue failed (%(carrier)s)\n"
+"Could not generate a label for order %(ref)s.\n"
+"Reason from the Hub:\n"
+"%(reason)s\n"
+
+#. module: shipping_hub_connector
+msgid ""
+"Label and tracking code removed from Odoo by %(user)s. Cancellation with the"
+" carrier must be handled manually."
+msgstr ""
+"Label and tracking code removed from Odoo by %(user)s. Cancellation with the"
+" carrier must be handled manually."
+
+#. module: shipping_hub_connector
+msgid ""
+"Warehouse partner is missing for %(picking)s. Complete the warehouse "
+"address."
+msgstr ""
+"Warehouse partner is missing for %(picking)s. Complete the warehouse "
+"address."
+
+#. module: shipping_hub_connector
+msgid "Delivery address (customer) is missing on %(picking)s."
+msgstr "Delivery address (customer) is missing on %(picking)s."
+
+#. module: shipping_hub_connector
+msgid "Shipping weight must be greater than zero on %(picking)s."
+msgstr "Shipping weight must be greater than zero on %(picking)s."
+
+#. module: shipping_hub_connector
+msgid "Gateway health check failed (%(url)s)."
+msgstr "Gateway health check failed (%(url)s)."
+
+#. module: shipping_hub_connector
+msgid "Connection test failed: %(msg)s"
+msgstr "Connection test failed: %(msg)s"
+
+#. module: shipping_hub_connector
+msgid "Quota: %(used)s / %(limit)s (%(plan)s)"
+msgstr "Quota: %(used)s / %(limit)s (%(plan)s)"
+
+#. module: shipping_hub_connector
+msgid "Quota used: %(used)s (%(plan)s)"
+msgstr "Quota used: %(used)s (%(plan)s)"
+
+#. module: shipping_hub_connector
+msgid "Partner %(name)s has no country set."
+msgstr "Partner %(name)s has no country set."
+
+#. module: shipping_hub_connector
+msgid "Partner %(name)s has no street address."
+msgstr "Partner %(name)s has no street address."
+
+#. module: shipping_hub_connector
+msgid "Partner %(name)s needs postal code and city."
+msgstr "Partner %(name)s needs postal code and city."
+
+#. module: shipping_hub_connector
+#: code:addons/shipping_hub_connector/models/stock_picking.py:0
+msgid "Number of packages"
+msgstr "Number of packages"
+
+#. module: shipping_hub_connector
+#: code:addons/shipping_hub_connector/models/stock_picking.py:0
+msgid ""
+"Number of physical parcels (colli) sent to the Hub for label generation."
+msgstr ""
+"Number of physical parcels (colli) sent to the Hub for label generation."

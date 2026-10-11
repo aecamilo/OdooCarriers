@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_picking_form_shipping_hub" model="ir.ui.view">
+        <field name="name">stock.picking.form.shipping.hub</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_shipping_hub_generate_label"
+                        string="Generate Hub Label"
+                        type="object"
+                        class="oe_highlight"
+                        invisible="not shipping_hub_show_generate"
+                        groups="stock.group_stock_user"/>
+                <button name="action_shipping_hub_cancel_label"
+                        string="Cancel Label"
+                        type="object"
+                        class="btn-secondary"
+                        confirm="Do you want to cancel this label with the carrier?"
+                        invisible="not shipping_hub_show_cancel"
+                        groups="stock.group_stock_user"/>
+            </xpath>
+            <xpath expr="//field[@name='carrier_id']" position="after">
+                <group string="Freight information" colspan="2"
+                       invisible="carrier_id.delivery_type != 'shipping_hub'">
+                    <group>
+                        <label for="carrier_tracking_ref"/>
+                        <div class="o_row">
+                            <field name="carrier_tracking_ref" readonly="1" nolabel="1"/>
+                            <button name="action_open_shipping_hub_tracking"
+                                    type="object"
+                                    icon="fa-external-link"
+                                    title="Open carrier tracking"
+                                    invisible="not shipping_hub_show_tracking"
+                                    class="btn-link"/>
+                        </div>
+                        <field name="shipping_weight"/>
+                        <field name="shipping_hub_number_of_packages"/>
+                    </group>
+                    <group>
+                        <field name="shipping_hub_label_id" readonly="1"/>
+                        <field name="shipping_hub_last_error" readonly="1"
+                               invisible="not shipping_hub_last_error"/>
+                    </group>
+                </group>
+                <field name="shipping_hub_show_generate" invisible="1"/>
+                <field name="shipping_hub_show_cancel" invisible="1"/>
+                <field name="shipping_hub_show_tracking" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_server_batch_shipping_hub_labels" model="ir.actions.server">
+        <field name="name">Generate Hub Labels (batch)</field>
+        <field name="model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_shipping_hub_batch_generate_labels()</field>
+    </record>
+</odoo>

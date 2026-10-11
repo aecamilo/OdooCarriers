@@ -1,0 +1,17 @@
+# Segredos e ambiente local
+.env
+hub-gateway/.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / tooling
+.idea/
+.vscode/
+.pytest_cache/
+graphify-out/
+graphify-out/cache/

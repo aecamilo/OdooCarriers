@@ -1,0 +1,12 @@
+# hub-test.stip.pt — requer registo DNS A → IP do servidor; depois: sudo certbot --nginx -d hub-test.stip.pt
+server {
+    listen 80;
+    listen [::]:80;
+    server_name hub-test.stip.pt;
+
+    include snippets/odoocarriers-gateway-proxy.conf;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+    }
+}

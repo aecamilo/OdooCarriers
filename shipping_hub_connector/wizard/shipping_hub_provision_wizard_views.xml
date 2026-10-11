@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shipping_hub_provision_wizard_form" model="ir.ui.view">
+        <field name="name">shipping.hub.provision.wizard.form</field>
+        <field name="model">shipping_hub.provision.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Activate Shipping Hub">
+                <group>
+                    <field name="iap_account_token" password="True"/>
+                    <field name="contact_email"/>
+                    <field name="api_token" invisible="not api_token"/>
+                </group>
+                <footer>
+                    <button name="action_provision" type="object" string="Provision API token" class="btn-primary"/>
+                    <button string="Close" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_shipping_hub_provision_wizard" model="ir.actions.act_window">
+        <field name="name">Activate Shipping Hub</field>
+        <field name="res_model">shipping_hub.provision.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
